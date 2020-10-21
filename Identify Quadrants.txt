@@ -1,0 +1,5 @@
+IF Sum ([Sales]) >= [Sales Parameter] AND Sum ([Profit]) >= [Profit Parameter] THEN "Q2"
+ELSEIF Sum ([Sales]) >= [Sales Parameter] AND Sum ([Profit]) < [Profit Parameter] THEN "Q3"
+ELSEIF Sum ([Sales]) < [Sales Parameter] AND Sum ([Profit]) >= [Profit Parameter] THEN "Q1"
+ELSEIF Sum ([Sales]) < [Sales Parameter] AND Sum ([Profit]) < [Profit Parameter] THEN "Q4"
+END
